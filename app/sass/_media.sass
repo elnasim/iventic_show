@@ -1,0 +1,198 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	.header__logo
+		text-align: center
+		margin-right: 0
+	.header__contacts
+		text-align: center
+		margin-top: 0
+		margin-bottom: 20px
+	.header__menu
+		ul
+			padding-right: 0
+			&::after
+				content: ''
+				height: 100%
+				width: 18px
+				top: 5px
+				right: -3px
+				position: absolute
+				background-image: url(../img/header/top-right.png)
+				background-repeat: no-repeat
+				background-position: right
+	.header__icons__item
+		margin: 15px 8px 0
+	.header__icons a:nth-child(8)
+		margin-left: 75px
+	.content__item-right
+		margin-top: 33px
+		img
+			width: 105px
+	.show-name
+		font-size: 28px
+	.show-price
+		font-size: 28px
+		margin-top: 6px
+		.show-price-first, .show-price-second
+			margin: 0 24px
+			.price__time
+				font-size: 20px
+			.price__price
+				font-size: 28px
+			.price__rub
+				font-size: 15px
+	.show-price-last
+		margin-right: -2px
+		margin-top: -35px
+	.footer
+		ul
+			li
+				a
+					font-size: 24px
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	.header__icons__item
+		margin: 15px 12px 0
+		display: inline-block
+		.item__img-wrapper
+			display: inline-block
+	.header__icons a:nth-child(8)
+		margin-left: 0px
+	.header__icons a:nth-child(11)
+		margin-left: 148px
+	.content
+		padding-bottom: 40px
+	.content__item
+		margin-bottom: 60px
+	.content__item-right
+		margin-top: 60px
+		img
+			width: 178px
+	.show-name
+		font-size: 40px
+	.show-price
+		font-size: 32px
+		margin-top: 6px
+		margin-right: 55px
+		.show-price-first, .show-price-second
+			margin: 0 50px
+			.price__time
+				font-size: 18px
+			.price__price
+				font-size: 32px
+			.price__rub
+				font-size: 15px
+	.contacts__left
+		text-align: left
+		padding: 10px 0
+	.show-price-last
+		margin-right: -28px
+		margin-top: -34px
+	.footer
+		font-size: 16px
+		ul
+			li
+				a
+					font-size: 18px
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	.content
+		padding-right: 15px
+	.header__icons__item
+		margin: 15px 12px 0
+		width: 49%
+		margin: 15px 0 0
+		&:nth-child(13)
+			width: 100%
+	.header__icons a:nth-child(11)
+		margin-left: 0
+	.content__item-left
+		width: 100%
+		margin-left: 3px
+	.content__item-right
+		text-align: center
+		margin-top: 20px
+		img
+			width: 24%
+	.show-name
+		font-size: 30px
+		display: block
+		text-align: center
+	.show-price
+		font-size: 28px
+		margin-right: 0
+		float: none
+		display: block
+		text-align: center
+		margin-top: 10px
+		.show-price-first, .show-price-second
+			margin: 0
+			.price__time
+				font-size: 20px
+			.price__price
+				font-size: 28px
+			.price__rub
+				font-size: 15px
+	.footer
+		font-size: 16px
+		ul
+			margin-bottom: 20px
+			li
+				display: block
+				a
+					font-size: 18px
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	.content__item-right
+		img
+			width: 49%
+	.show-name
+		font-size: 20px
+	.show-price
+		font-size: 22px
+	.show-price-last
+		margin-right: 0
+		margin-top: 5px
+	.contacts__left
+		font-size: 24px
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+

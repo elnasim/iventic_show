@@ -1,0 +1,328 @@
+@import "fonts"
+@import "vars"
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html, body
+	height: 100%
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.75
+	font-family: $default-font
+	overflow-x: hidden
+	opacity: 1
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+.header
+	background-image: url(../img/header/top_bg.jpg)
+	background-size: cover
+	background-position: top center
+	padding: 65px 0 120px
+
+.header__logo
+	text-align: right
+	margin-right: -16px
+	display: block
+
+.header__contacts
+	margin-top: 152px
+	color: #fff
+	font-family: "TimesNewRomanItalic", sans-serif
+	font-size: 27px
+	line-height: 1
+	text-align: right
+	text-shadow: 0 -3px 6px #000,
+	0 -3px 6px #000,
+	0 3px 6px #000,
+	0 3px 6px #000,
+	-3px 0 6px #000,
+	3px 0 6px #000,
+	-3px 0 6px #000,
+	3px 0 6px #000,
+	-1px -3px 6px #000,
+	1px -3px 6px #000,
+	-1px 3px 6px #000,
+	1px 3px 6px #000,
+	-3px -1px 6px #000,
+	3px -1px 6px #000,
+	-3px 1px 6px #000,
+	3px 1px 6px #000,
+	-2px -3px 6px #000,
+	2px -3px 6px #000,
+	-2px 3px 6px #000,
+	2px 3px 6px #000,
+	-3px -2px 6px #000,
+	3px -2px 6px #000,
+	-3px 2px 6px #000,
+	3px 2px 6px #000,
+	-3px -3px 6px #000,
+	3px -3px 6px #000,
+	-3px 3px 6px #000,
+	3px 3px 6px #000,
+	-3px -3px 6px #000,
+	3px -3px 6px #000,
+	-3px 3px 6px #000,
+	3px 3px 6px #000
+
+.header__menu
+	text-align: center
+	ul
+		padding: 0
+		margin: 0
+		list-style-type: none
+		display: inline-block
+		position: relative
+		&::before
+			content: ''
+			height: 100%
+			width: 18px
+			top: 5px
+			left: -5px
+			position: absolute
+			background-image: url(../img/header/top-left.png)
+			background-repeat: no-repeat
+		&::after
+			content: ''
+			height: 100%
+			width: 18px
+			top: 5px
+			right: -3px
+			position: absolute
+			background-image: url(../img/header/top-right.png)
+			background-repeat: no-repeat
+			background-position: right
+		li
+			display: inline-block
+			transition: all .25s ease
+			a
+				font-family: "TimesNewRomanBold", sans-serif
+				color: #fff
+				font-size: 27px
+				margin: 0 22px
+
+.hidden-menu
+	text-align: center
+	display: none
+	font-size: 26px
+	ul
+		padding: 0
+		margin: 0
+		list-style-type: none
+		li
+			a
+				display: block
+				background-color: $accent
+				color: #fff
+				transition: .25s all ease
+				&:hover
+					text-decoration: none
+					background-color: #fff
+					color: $accent
+
+.toggle-mnu-wrapper
+	text-align: center
+.toggle-mnu 
+  display: inline-block
+  width: 28px
+  height: 28px
+  margin-top: 14px
+
+  span:after, span:before 
+    content: ""
+    position: absolute
+    left: 0
+    top: 9px
+
+  span:after
+    top: 18px
+
+  span 
+    position: relative
+    display: block
+
+  span, span:after, span:before
+    width: 100%
+    height: 2px
+    background-color: #fff
+    transition: all 0.3s
+    backface-visibility: hidden
+    border-radius: 2px
+
+
+  &.on span 
+    background-color: transparent
+
+  &.on span:before 
+    transform: rotate(45deg) translate(-1px, 0px)
+
+  &.on span:after 
+    transform: rotate(-45deg) translate(6px, -7px)
+
+.header__icons a:nth-child(8)
+	margin-left: 76px
+
+.header__icons__item
+	text-align: center
+	display: inline-block
+	transition: all .25s ease
+	margin: 15px 9px 0
+	&:hover, &:active
+		text-decoration: none
+		opacity: .9
+	.item__text
+		margin-top: -17px
+		color: $accent
+		font-family: "TimesNewRomanItalic", sans-serif
+		font-size: 18px
+		text-shadow: 0 -3px 6px #FFFFFF,
+		0 -3px 6px #FFFFFF,
+		0 3px 6px #FFFFFF,
+		0 3px 6px #FFFFFF,
+		-3px 0 6px #FFFFFF,
+		3px 0 6px #FFFFFF,
+		-3px 0 6px #FFFFFF,
+		3px 0 6px #FFFFFF,
+		-1px -3px 6px #FFFFFF,
+		1px -3px 6px #FFFFFF,
+		-1px 3px 6px #FFFFFF,
+		1px 3px 6px #FFFFFF,
+		-3px -1px 6px #FFFFFF,
+		3px -1px 6px #FFFFFF,
+		-3px 1px 6px #FFFFFF,
+		3px 1px 6px #FFFFFF,
+		-2px -3px 6px #FFFFFF,
+		2px -3px 6px #FFFFFF,
+		-2px 3px 6px #FFFFFF,
+		2px 3px 6px #FFFFFF,
+		-3px -2px 6px #FFFFFF,
+		3px -2px 6px #FFFFFF,
+		-3px 2px 6px #FFFFFF,
+		3px 2px 6px #FFFFFF,
+		-3px -3px 6px #FFFFFF,
+		3px -3px 6px #FFFFFF,
+		-3px 3px 6px #FFFFFF,
+		3px 3px 6px #FFFFFF,
+		-3px -3px 6px #FFFFFF,
+		3px -3px 6px #FFFFFF,
+		-3px 3px 6px #FFFFFF,
+		3px 3px 6px #FFFFFF
+
+.content
+	padding: 100px 0 30px
+	background: radial-gradient(circle, #FFFDF3, #FAF7D7)
+	position: relative
+	&::before
+		content: ''
+		background: linear-gradient(rgba(#FBF9DF, 0), #FBF9DF)
+		width: 100%
+		height: 50px
+		position: absolute
+		top: -43px
+		left: 0
+
+.content__item
+	margin-bottom: 15px
+	font-family: "Conkordia", sans-serif
+
+.content__item-left
+	display: inline-block
+	img
+		width: 100%
+.content__item-right
+	margin-top: 43px
+	img
+		margin-bottom: 10px
+		width: 133px
+	.big-img
+		display: inline-block
+		float: left
+		margin-right: 4px
+
+.show-name
+	font-size: 34px
+	color: $accent
+	transition: .25s all ease
+	line-height: 1
+	&:hover, &:active
+		text-decoration: none
+		opacity: .8
+		color: $accent
+
+.show-price
+	font-size: 34px
+	color: $accent
+	float: right
+	line-height: .5
+	text-align: center
+	margin-right: 40px
+	span
+		font-size: 15px
+	.show-price-first, .show-price-second
+		display: inline-block
+		line-height: .9
+		margin: 0 30px
+		.price__time
+			font-size: 20px
+		.price__price
+			font-size: 34px
+		.price__rub
+			font-size: 15px
+.show-price-last
+	margin-top: -36px
+	margin-right: -4px
+
+.contacts
+	background-color: #E28F4F
+.contacts__left
+	color: #080808
+	text-align: right
+	padding: 90px 0
+	font-size: 30px
+	line-height: 1
+
+.footer
+	background-color: #060805
+	text-align: center
+	color: #fffefe
+	font-size: 20px
+	padding: 15px 0
+	ul
+		padding: 0
+		margin: 0
+		list-style-type: none
+		li
+			display: inline-block
+			margin: 0 20px
+			a
+				font-size: 36px
+				color: #fffefe
+
+@import "media" // Всегда в конце
